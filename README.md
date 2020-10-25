@@ -14,3 +14,4 @@
 
 # current features
 - dice rolling for all dnd dice types
+- character base stat calculator
