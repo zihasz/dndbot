@@ -27,7 +27,7 @@ fs.readdir("./commands/dice/", (err, files) => {
     if (!file.endsWith(".js")) { return; }
     let props = require(`./commands/dice/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`[dndbot]` + ` ` + `Attempting to load the command` + ` ` + `'` + `${commandName}` + `'` + `.`);
+    console.log(`[dndbot] Attempting to load the command '${commandName}'`);
     client.commands.set(commandName, props);
   });
 });
@@ -39,7 +39,7 @@ fs.readdir("./commands/character/", (err, files) => {
     if (!file.endsWith(".js")) { return; }
     let props = require(`./commands/character/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`[dndbot]` + ` ` + `Attempting to load the command` + ` ` + `'` + `${commandName}` + `'` + `.`);
+    console.log(`[dndbot] Attempting to load the command '${commandName}'`);
     client.commands.set(commandName, props);
   });
 });
@@ -51,7 +51,7 @@ fs.readdir("./commands/standard/", (err, files) => {
     if (!file.endsWith(".js")) { return; }
     let props = require(`./commands/standard/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`[dndbot]` + ` ` + `Attempting to load the command` + ` ` + `'` + `${commandName}` + `'` + `.`);
+    console.log(`[dndbot] Attempting to load the command '${commandName}'`);
     client.commands.set(commandName, props);
   });
 });
@@ -63,7 +63,7 @@ fs.readdir("./commands/fun/", (err, files) => {
     if (!file.endsWith(".js")) { return; }
     let props = require(`./commands/fun/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`[dndbot]` + ` ` + `Attempting to load the command` + ` ` + `'` + `${commandName}` + `'` + `.`);
+    console.log(`[dndbot] Attempting to load the command '${commandName}'`);
     client.commands.set(commandName, props);
   });
 });
